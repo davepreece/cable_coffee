@@ -1,0 +1,21 @@
+* {
+background-color: black;
+width: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.left-col {
+    color: #45a29e;
+    background-color: #c5c6c7;
+    width: 50%;
+}
+
+.right-col {
+    color: #c5c6c7;
+    background-color: #45a29e;
+    width: 50%;
+}
+
