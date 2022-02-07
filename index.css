@@ -2,6 +2,13 @@
 * {
     padding: 0px;
     box-sizing: border-box;
+    font-family: GT Pressure,monospace;
+}
+
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -12,6 +19,7 @@ body {
     background-color: #182619;
     display: flex;
     align-items: center;
+
 }
 
 .nav-left {
@@ -19,12 +27,78 @@ body {
     justify-content: flex-start;
 }
 
-.nav-image {
-    width: 30px;
-    margin-left: 15px;
+.navbar {
+    width: 40px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    padding-left: 7px;
+    transition: all 0.6s;
+    border: 3px solid #efe0cb;
 }
 
-.nav-logo-right {
-    width: 140px;
-    margin-right: 15px;
+.navbar div {
+    height: 2px !important;
+    background: #fff;
+    margin: 5px 0px 5px 0px;
+    border-radius: 25px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.navone {
+ width: 20px;
+}
+.navtwo {
+    width: 15px;
+}
+.navthree {
+    width: 10px;
+}
+
+
+.title {
+    padding-right: 20px;
+    color:#efe0cb;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 4px 0px;
+}
+
+.title-dot{
+    color: rgb(245, 9, 139);
+    font-weight: 700;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    background-color: #182619;
+}
+
+.section-one-images {
+ width: 33%;
+ border: 8px solid #182619;
+}
+
+@media (max-width: 500px) {
+    .section-one-images {
+        border: 1px solid #182619;
+    }
+}
+
+.section-two {
+    margin: 20px 5px;
+}
+
+.section-two-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.section-two-text {
+    margin: 2.5em;
 }
