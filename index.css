@@ -102,3 +102,22 @@ body {
 .section-two-text {
     margin: 2.5em;
 }
+
+.about {
+    background-color: #182619;
+    color: #efe0cb;
+    display: flex;
+}
+
+.coffee {
+    display: flex;
+    width: 25%;
+    background-color: #efe0cb;
+    color: #182619;
+    border-radius: 15%;
+    border: 2px solid #182619
+}
+
+.coffee-image {
+    width: 200px;
+}
