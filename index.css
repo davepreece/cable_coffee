@@ -80,12 +80,7 @@ body {
 .section-one-images {
  width: 33%;
  border: 8px solid #182619;
-}
-
-@media (max-width: 500px) {
-    .section-one-images {
-        border: 1px solid #182619;
-    }
+ border-radius: 10px;
 }
 
 .section-two {
@@ -113,17 +108,18 @@ body {
 
 .coffee {
     margin: 20px;
-    display: flex;
+    display:flex;
+    flex-direction: column;
     width: 31%;
     background-color: #efe0cb;
     color: #182619;
-    border-radius: 15%;
+    border-radius: 10%;
     border: 2px solid #182619;
     overflow: hidden;
 }
 
 .coffee-image {
-    width: 50%;
+    max-height:300px;
 }
 
 .coffee-text{
@@ -139,4 +135,25 @@ body {
     text-transform: uppercase;
     font-size: smaller;
     font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    .section-one-images {
+        width: 33%;
+    }
+    .section-two-title {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+    .section-two-text {
+        margin: 2em;
+        width: 90%;
+        justify-self: center;
+    }
+    .coffee-text{
+        padding-left: 10px;
+        font-size: 1em;
+    }
 }
