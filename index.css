@@ -3,8 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: GT Pressure,monospace;
+    margin: 0;
 }
 
+img {
+    display:block;
+    width: 100%;
+}
 
 ul {
     text-decoration: none;
@@ -16,6 +21,7 @@ body {
 }
 
 .nav-bar {
+    padding-top: 5px;
     background-color: #182619;
     display: flex;
     align-items: center;
@@ -84,11 +90,14 @@ body {
 }
 
 .section-two {
-    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-two-title {
-    font-size: 1em;
+    padding-top: 5px;
+    font-size: 18px;
+    margin: 1% 15%;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -96,8 +105,10 @@ body {
 
 .section-two-text {
     margin: 2em;
-    width: 60%;
-    justify-self: center;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about {
@@ -113,7 +124,7 @@ body {
     width: 31%;
     background-color: #efe0cb;
     color: #182619;
-    border-radius: 10%;
+    border-radius: 3%;
     border: 2px solid #182619;
     overflow: hidden;
 }
@@ -137,23 +148,33 @@ body {
     font-weight: 600;
 }
 
-@media (max-width: 500px) {
+@media (max-width:800px) {
     .section-one-images {
         width: 33%;
     }
     .section-two-title {
+        padding-top: 5px;
         font-size: 0.8em;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
     }
     .section-two-text {
-        margin: 2em;
+        font-size: 14px;
+        margin: 1.8em;
         width: 90%;
-        justify-self: center;
     }
     .coffee-text{
         padding-left: 10px;
-        font-size: 1em;
+        font-size: 1rem;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .coffee {
+        width: 60%;
+        margin: 5% 10% 0% 15%;
+        justify-content: center;
     }
 }
