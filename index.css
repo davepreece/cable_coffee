@@ -115,13 +115,14 @@ body {
     background-color: #182619;
     color: #efe0cb;
     display: flex;
+    justify-content: center;
 }
 
 .coffee {
     margin: 20px;
     display:flex;
     flex-direction: column;
-    width: 31%;
+    width: 25%;
     background-color: #efe0cb;
     color: #182619;
     border-radius: 3%;
@@ -148,7 +149,7 @@ body {
     font-weight: 600;
 }
 
-@media (max-width:800px) {
+@media (max-width:950px) {
     .section-one-images {
         width: 33%;
     }
@@ -170,11 +171,13 @@ body {
     }
     .about {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+
     }
     .coffee {
-        width: 60%;
-        margin: 5% 10% 0% 15%;
-        justify-content: center;
+        width: 40%;
+        display: flex;
+        justify-items: center;
+        min-width: 300px;
     }
 }
